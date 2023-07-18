@@ -1,7 +1,7 @@
 
 import React from "react";
 
-const Header = (products) => {
+const Header = (props) => {
   return (
     <header>
       <nav>
@@ -17,7 +17,7 @@ const Header = (products) => {
         
         <div>
           <label>Sort by category:</label>
-          <select value={categoryFilter} onChange={handleCategoryFilterChange}>
+          <select value={props.categoryFilter} onChange= {props.handleCategoryFilterChange}>
         <option value="">All</option> 
         <option value="smartphones">Smartphones</option>
         <option value="laptops">Laptops</option>

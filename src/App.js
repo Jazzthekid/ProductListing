@@ -17,7 +17,9 @@ function App() {
     
   
      <div> 
-      <Header products={products} handleCategoryFilterChange={handleCategoryFilterChange}/>
+      <Header
+       handleChange={handleCategoryFilterChange}
+       handleCategoryFilterChange={handleCategoryFilterChange}/>
       {data.products
         .filter((product) => categoryFilter === "" || product.category === categoryFilter)
         .map((product) => (
@@ -27,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
