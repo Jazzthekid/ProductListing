@@ -4,10 +4,10 @@ import React from "react";
 const Header = (props) => {
   return (
     <header>
-      <nav>
+      <nav >
         
         <div>
-          <label>Sort by name:</label>
+          <label>Sort by Name: </label>
           <select>
             <option value="ascending">Ascending</option>
             <option value="descending">Descending</option>
@@ -16,7 +16,7 @@ const Header = (props) => {
 
         
         <div>
-          <label>Sort by category:</label>
+          <label>Sort by Category: </label>
           <select value={props.categoryFilter} onChange= {props.handleCategoryFilterChange}>
         <option value="">All</option> 
         <option value="smartphones">Smartphones</option>

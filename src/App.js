@@ -16,17 +16,19 @@ function App() {
   return (
     
   
-     <div> 
-      <Header
+  <div>
+    <Header
+     
        handleChange={handleCategoryFilterChange}
        handleCategoryFilterChange={handleCategoryFilterChange}/>
+      <div className="grid-container"> 
       {data.products
         .filter((product) => categoryFilter === "" || product.category === categoryFilter)
         .map((product) => (
           <Product key={product.id} product={product} />
         ))}
-   </div>
+   </div></div>
   );
 }
 
-export default App
+export default App 

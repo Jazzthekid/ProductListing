@@ -11,8 +11,10 @@
   } 
   
   .product-card img {
-    max-height: 200px;
-   
+    width: 350px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
   }
   
   .product-card h3 {
